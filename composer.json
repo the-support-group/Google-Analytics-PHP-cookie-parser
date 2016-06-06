@@ -1,0 +1,18 @@
+{
+    "name": "the-support-group/google-analytics-cookie-parser",
+    "description": "A google analytics cookie parser to read the tracking data",
+    "authors": [
+        {
+            "name": "Luke Alexander Tarplin",
+            "email": "luke@easyfundraising.org.uk"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "TheSupportGroup\\Common\\GoogleAnalyticsCookieParser\\": "src/"
+        }
+    }
+}

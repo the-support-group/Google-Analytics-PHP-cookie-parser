@@ -35,9 +35,21 @@ class GA implements GAInterface
 
 
     /**
+     * @var int $session_id A session Id.
+     */
+    protected $session_id;
+
+
+    /**
      * @var string $campaign_content A campaign content.
      */
     protected $campaign_content;
+
+
+    /**
+     * @var int $campaign_number A campaign number.
+     */
+    protected $campaign_number;
 
 
     /**
@@ -165,6 +177,28 @@ class GA implements GAInterface
 
 
     /**
+     * Get a session Id.
+     * @return int
+     */
+    public function getSessionId()
+    {
+        return $this->session_id;
+    }
+
+
+    /**
+     * Set a session Id.
+     * @param int $session_id A session Id.
+     * @return self
+     */
+    public function setSessionId($session_id)
+    {
+        $this->session_id = $session_id;
+        return $this;
+    }
+
+
+    /**
      * Get a campaign content.
      * @return string
      */
@@ -182,6 +216,28 @@ class GA implements GAInterface
     public function setCampaignContent($campaign_content)
     {
         $this->campaign_content = $campaign_content;
+        return $this;
+    }
+
+
+    /**
+     * Get a campaign number.
+     * @return int
+     */
+    public function getCampaignNumber()
+    {
+        return $this->campaign_number;
+    }
+
+
+    /**
+     * Set a campaign number.
+     * @param int $campaign_number A campaign number.
+     * @return self
+     */
+    public function setCampaignNumber($campaign_number)
+    {
+        $this->campaign_number = $campaign_number;
         return $this;
     }
 

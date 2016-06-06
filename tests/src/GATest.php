@@ -28,7 +28,9 @@ class GATest extends PHPUnit_Framework_TestCase
             ->setCampaignName('none')
             ->setCampaignSource('(direct)')
             ->setCampaignTerm('travel-2015')
+            ->setCampaignNumber(1)
             ->setRandomId(1388416008)
+            ->setSessionId(1)
             ->setCurrentVisitStarted($date)
             ->setFirstVisit($date)
             ->setPreviousVisit($date)
@@ -84,6 +86,19 @@ class GATest extends PHPUnit_Framework_TestCase
     }
 
 
+    public function testGetSessionId()
+    {
+        $this->assertEquals(1, $this->ga->getSessionId());
+    }
+
+
+    public function testSetSessionId()
+    {
+        $this->ga->setSessionId(2);
+        $this->assertEquals(2, $this->ga->getSessionId());
+    }
+
+
     public function testGetCampaignMedium()
     {
         $this->assertEquals('(direct)', $this->ga->getCampaignMedium());
@@ -94,6 +109,19 @@ class GATest extends PHPUnit_Framework_TestCase
     {
         $this->ga->setCampaignMedium('(referral)');
         $this->assertEquals('(referral)', $this->ga->getCampaignMedium());
+    }
+
+
+    public function testGetCampaignNumber()
+    {
+        $this->assertEquals(1, $this->ga->getCampaignNumber());
+    }
+
+
+    public function testSetCampaignNumber()
+    {
+        $this->ga->setCampaignNumber(2);
+        $this->assertEquals(2, $this->ga->getCampaignNumber());
     }
 
 

@@ -62,7 +62,7 @@ class GAParse implements GAParseInterface
             return false;
         }
 
-        $campaign_data = $utmzData[4];
+        list(, , $session_number, $campaign_number, $campaign_data) = $utmzData;
 
         // Setup defaults.
         $utmcsr = '';
@@ -78,10 +78,12 @@ class GAParse implements GAParseInterface
             )
         );
 
-        // Add the campaign variables.
-        $gaObject->setCampaignSource($utmcsr)
+        // Add the session/campaign variables.
+        $gaObject->setSessionId($session_number)
+            ->setCampaignSource($utmcsr)
             ->setCampaignName($utmccn)
             ->setCampaignMedium($utmcmd)
+            ->setCampaignNumber($campaign_number)
             ->setCampaignTerm($utmctr)
             ->setCampaignContent($utmcct);
 

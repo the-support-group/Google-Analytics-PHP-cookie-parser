@@ -26,7 +26,9 @@ class GAParseTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('(direct)', $gaObj->getCampaignSource());
         $this->assertEquals('(direct)', $gaObj->getCampaignName());
         $this->assertEquals('(none)', $gaObj->getCampaignMedium());
+        $this->assertEquals(1, $gaObj->getCampaignNumber());
         $this->assertEquals(689278735, $gaObj->getRandomId());
+        $this->assertEquals(1, $gaObj->getSessionId());
         $this->assertEquals(1463472764, $gaObj->getFirstVisit()->getTimestamp());
         $this->assertEquals(1463483571, $gaObj->getPreviousVisit()->getTimestamp());
         $this->assertEquals(1463488513, $gaObj->getCurrentVisitStarted()->getTimestamp());
@@ -51,7 +53,9 @@ class GAParseTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('bitbucket.org', $gaObj->getCampaignSource());
         $this->assertEquals('(referral)', $gaObj->getCampaignName());
         $this->assertEquals('referral', $gaObj->getCampaignMedium());
+        $this->assertEquals(1, $gaObj->getCampaignNumber());
         $this->assertEquals(1662927487, $gaObj->getRandomId());
+        $this->assertEquals(1, $gaObj->getSessionId());
         $this->assertEquals('/easyfundraising/easyfundraising/pull-requests/', $gaObj->getCampaignContent());
         $this->assertEquals(1463654626, $gaObj->getFirstVisit()->getTimestamp());
         $this->assertEquals(1463654626, $gaObj->getPreviousVisit()->getTimestamp());
@@ -77,7 +81,9 @@ class GAParseTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('google', $gaObj->getCampaignSource());
         $this->assertEquals('', $gaObj->getCampaignName());
         $this->assertEquals('cpc', $gaObj->getCampaignMedium());
+        $this->assertEquals(1, $gaObj->getCampaignNumber());
         $this->assertEquals(1388416008, $gaObj->getRandomId());
+        $this->assertEquals(1, $gaObj->getSessionId());
         $this->assertEquals('', $gaObj->getCampaignContent());
         $this->assertEquals(1463673917, $gaObj->getFirstVisit()->getTimestamp());
         $this->assertEquals(1463673917, $gaObj->getPreviousVisit()->getTimestamp());

@@ -71,6 +71,21 @@ interface GAInterface
 
 
     /**
+     * Get a session Id.
+     * @return int
+     */
+    public function getSessionId();
+
+
+    /**
+     * Set a session Id.
+     * @param int $session_id A session Id.
+     * @return self
+     */
+    public function setSessionId($session_id);
+
+
+    /**
      * Get a campaign content.
      * @return string
      */
@@ -83,6 +98,21 @@ interface GAInterface
      * @return self
      */
     public function setCampaignContent($campaign_content);
+
+
+    /**
+     * Get a campaign number.
+     * @return int
+     */
+    public function getCampaignNumber();
+
+
+    /**
+     * Set a campaign number.
+     * @param int $campaign_number A campaign number.
+     * @return self
+     */
+    public function setCampaignNumber($campaign_number);
 
 
     /**

@@ -29,6 +29,12 @@ class GA implements GAInterface
 
 
     /**
+     * @var int $random_id A random Id.
+     */
+    protected $random_id;
+
+
+    /**
      * @var string $campaign_content A campaign content.
      */
     protected $campaign_content;
@@ -132,6 +138,28 @@ class GA implements GAInterface
     public function setCampaignMedium($campaign_medium)
     {
         $this->campaign_medium = $campaign_medium;
+        return $this;
+    }
+
+
+    /**
+     * Get a random Id.
+     * @return int
+     */
+    public function getRandomId()
+    {
+        return $this->random_id;
+    }
+
+
+    /**
+     * Set a random Id.
+     * @param int $random_id A random Id.
+     * @return self
+     */
+    public function setRandomId($random_id)
+    {
+        $this->random_id = $random_id;
         return $this;
     }
 

@@ -56,6 +56,21 @@ interface GAInterface
 
 
     /**
+     * Get a random Id.
+     * @return int
+     */
+    public function getRandomId();
+
+
+    /**
+     * Set a random Id.
+     * @param int $random_id A random Id.
+     * @return self
+     */
+    public function setRandomId($random_id);
+
+
+    /**
      * Get a campaign content.
      * @return string
      */

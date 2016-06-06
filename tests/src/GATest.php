@@ -28,6 +28,7 @@ class GATest extends PHPUnit_Framework_TestCase
             ->setCampaignName('none')
             ->setCampaignSource('(direct)')
             ->setCampaignTerm('travel-2015')
+            ->setRandomId(1388416008)
             ->setCurrentVisitStarted($date)
             ->setFirstVisit($date)
             ->setPreviousVisit($date)
@@ -67,6 +68,19 @@ class GATest extends PHPUnit_Framework_TestCase
     {
         $this->ga->setCampaignName('TATW');
         $this->assertEquals('TATW', $this->ga->getCampaignName());
+    }
+
+
+    public function testGetRandomId()
+    {
+        $this->assertEquals(1388416008, $this->ga->getRandomId());
+    }
+
+
+    public function testSetRandomId()
+    {
+        $this->ga->setRandomId(1388400000);
+        $this->assertEquals(1388400000, $this->ga->getRandomId());
     }
 
 

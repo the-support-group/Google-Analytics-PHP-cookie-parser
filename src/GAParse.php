@@ -100,12 +100,13 @@ class GAParse implements GAParseInterface
         $utmaData = preg_split('[\.]', $cookie["__utma"]);
 
         // Parse the __utma cookie.
-        list(, , $time_initial_visit, $time_beginning_previous_visit, $time_beginning_current_visit, $session_counter) = $utmaData;
+        list(, $random_id, $time_initial_visit, $time_start_previous_visit, $time_start_current_visit, $session_counter) = $utmaData;
 
-        $gaObject->setFirstVisit((new DateTime())->setTimestamp($time_initial_visit));
-        $gaObject->setPreviousVisit((new DateTime())->setTimestamp($time_beginning_previous_visit));
-        $gaObject->setCurrentVisitStarted((new DateTime())->setTimestamp($time_beginning_current_visit));
-        $gaObject->setTimesVisited($session_counter);
+        $gaObject->setRandomId($random_id)
+            ->setFirstVisit((new DateTime())->setTimestamp($time_initial_visit))
+            ->setPreviousVisit((new DateTime())->setTimestamp($time_start_previous_visit))
+            ->setCurrentVisitStarted((new DateTime())->setTimestamp($time_start_current_visit))
+            ->setTimesVisited($session_counter);
 
         return $gaObject;
     }

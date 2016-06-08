@@ -65,9 +65,9 @@ class GAParseTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Test that parsing known good (referral) values returns a valid object.
+     * Test that parsing known good (CPC referral) values returns a valid object.
      */
-    public function testParseCookiesWorksWithReferralCampaignGoogleValues()
+    public function testParseCookiesWorksWithCPCGoogleValues()
     {
         $gaObj = (new GAParse(
             [
@@ -84,7 +84,7 @@ class GAParseTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(1, $gaObj->getCampaignNumber());
         $this->assertEquals(1388416008, $gaObj->getRandomId());
         $this->assertEquals(1, $gaObj->getSessionId());
-        $this->assertEquals('', $gaObj->getCampaignContent());
+        $this->assertEquals('CM-Eyp7C5swCFQeVGwoddmcKiw', $gaObj->getCampaignContent());
         $this->assertEquals(1463673917, $gaObj->getFirstVisit()->getTimestamp());
         $this->assertEquals(1463673917, $gaObj->getPreviousVisit()->getTimestamp());
         $this->assertEquals(1463673917, $gaObj->getCurrentVisitStarted()->getTimestamp());

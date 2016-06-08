@@ -97,7 +97,7 @@ class GAParse implements GAParseInterface
                 ->setCampaignName('')
                 ->setCampaignMedium('cpc')
                 ->setCampaignTerm($utmctr)
-                ->setCampaignContent('');
+                ->setCampaignContent($utmgclid);
         }
 
         // Split the utma data into an array.

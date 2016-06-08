@@ -90,6 +90,7 @@ class GA implements GAInterface
 
     /**
      * Get campaign source.
+     *
      * @return string
      */
     public function getCampaignSource()
@@ -100,7 +101,9 @@ class GA implements GAInterface
 
     /**
      * Set campaign source.
+     *
      * @param string $campaign_source A campaign source.
+     *
      * @return self
      */
     public function setCampaignSource($campaign_source)
@@ -112,6 +115,7 @@ class GA implements GAInterface
 
     /**
      * Get a campaign name.
+     *
      * @return string
      */
     public function getCampaignName()
@@ -122,7 +126,9 @@ class GA implements GAInterface
 
     /**
      * Set a campaign name.
+     *
      * @param string $campaign_name A campaign name.
+     *
      * @return self
      */
     public function setCampaignName($campaign_name)
@@ -134,6 +140,7 @@ class GA implements GAInterface
 
     /**
      * Get a campaign medium.
+     *
      * @return string
      */
     public function getCampaignMedium()
@@ -144,7 +151,9 @@ class GA implements GAInterface
 
     /**
      * Set a campaign medium.
+     *
      * @param string $campaign_medium A campaign medium.
+     *
      * @return self
      */
     public function setCampaignMedium($campaign_medium)
@@ -156,6 +165,7 @@ class GA implements GAInterface
 
     /**
      * Get a random Id.
+     *
      * @return int
      */
     public function getRandomId()
@@ -166,7 +176,9 @@ class GA implements GAInterface
 
     /**
      * Set a random Id.
+     *
      * @param int $random_id A random Id.
+     *
      * @return self
      */
     public function setRandomId($random_id)
@@ -178,6 +190,7 @@ class GA implements GAInterface
 
     /**
      * Get a session Id.
+     *
      * @return int
      */
     public function getSessionId()
@@ -188,7 +201,9 @@ class GA implements GAInterface
 
     /**
      * Set a session Id.
+     *
      * @param int $session_id A session Id.
+     *
      * @return self
      */
     public function setSessionId($session_id)
@@ -200,6 +215,7 @@ class GA implements GAInterface
 
     /**
      * Get a campaign content.
+     *
      * @return string
      */
     public function getCampaignContent()
@@ -210,7 +226,9 @@ class GA implements GAInterface
 
     /**
      * Set a campaign content.
+     *
      * @param string $campaign_content A campaign content.
+     *
      * @return self
      */
     public function setCampaignContent($campaign_content)
@@ -222,6 +240,7 @@ class GA implements GAInterface
 
     /**
      * Get a campaign number.
+     *
      * @return int
      */
     public function getCampaignNumber()
@@ -232,7 +251,9 @@ class GA implements GAInterface
 
     /**
      * Set a campaign number.
+     *
      * @param int $campaign_number A campaign number.
+     *
      * @return self
      */
     public function setCampaignNumber($campaign_number)
@@ -244,6 +265,7 @@ class GA implements GAInterface
 
     /**
      * Get campaign terms.
+     *
      * @return string
      */
     public function getCampaignTerm()
@@ -254,7 +276,9 @@ class GA implements GAInterface
 
     /**
      * Set campaign terms.
+     *
      * @param string $campaign_term A campaign terms.
+     *
      * @return self
      */
     public function setCampaignTerm($campaign_term)
@@ -266,6 +290,7 @@ class GA implements GAInterface
 
     /**
      * Get first visit.
+     *
      * @return DateTimeInterface
      */
     public function getFirstVisit()
@@ -276,7 +301,9 @@ class GA implements GAInterface
 
     /**
      * Set first visit.
+     *
      * @param DateTimeInterface $first_visit First visit.
+     *
      * @return self
      */
     public function setFirstVisit(DateTimeInterface $first_visit)
@@ -288,6 +315,7 @@ class GA implements GAInterface
 
     /**
      * Get previous visit.
+     *
      * @return DateTimeInterface
      */
     public function getPreviousVisit()
@@ -298,7 +326,9 @@ class GA implements GAInterface
 
     /**
      * Set previous visit.
+     *
      * @param DateTimeInterface $previous_visit Previous visit.
+     *
      * @return self
      */
     public function setPreviousVisit(DateTimeInterface $previous_visit)
@@ -310,6 +340,7 @@ class GA implements GAInterface
 
     /**
      * Get current visit started.
+     *
      * @return DateTimeInterface
      */
     public function getCurrentVisitStarted()
@@ -320,7 +351,9 @@ class GA implements GAInterface
 
     /**
      * Set current visit started.
+     *
      * @param DateTimeInterface $current_visit_started Current visit started.
+     *
      * @return self
      */
     public function setCurrentVisitStarted(DateTimeInterface $current_visit_started)
@@ -332,6 +365,7 @@ class GA implements GAInterface
 
     /**
      * Get times visited.
+     *
      * @return string
      */
     public function getTimesVisited()
@@ -342,7 +376,9 @@ class GA implements GAInterface
 
     /**
      * Set times visited.
+     *
      * @param string $times_visited Times visited.
+     * .
      * @return self
      */
     public function setTimesVisited($times_visited)
@@ -354,6 +390,7 @@ class GA implements GAInterface
 
     /**
      * Get pages viewed.
+     *
      * @return string
      */
     public function getPagesViewed()
@@ -364,7 +401,9 @@ class GA implements GAInterface
 
     /**
      * Set pages viewed.
+     *
      * @param string $pages_viewed pages viewed.
+     * 
      * @return self
      */
     public function setPagesViewed($pages_viewed)

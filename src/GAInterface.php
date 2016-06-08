@@ -12,6 +12,7 @@ interface GAInterface
 {
     /**
      * Get campaign source.
+     *
      * @return string
      */
     public function getCampaignSource();
@@ -19,7 +20,9 @@ interface GAInterface
 
     /**
      * Set campaign source.
+     *
      * @param string $campaign_source A campaign source.
+     *
      * @return self
      */
     public function setCampaignSource($campaign_source);
@@ -27,6 +30,7 @@ interface GAInterface
 
     /**
      * Get a campaign name.
+     *
      * @return string
      */
     public function getCampaignName();
@@ -34,7 +38,9 @@ interface GAInterface
 
     /**
      * Set a campaign name.
+     *
      * @param string $campaign_name A campaign name.
+     *
      * @return self
      */
     public function setCampaignName($campaign_name);
@@ -42,6 +48,7 @@ interface GAInterface
 
     /**
      * Get a campaign medium.
+     *
      * @return string
      */
     public function getCampaignMedium();
@@ -49,7 +56,9 @@ interface GAInterface
 
     /**
      * Set a campaign medium.
+     *
      * @param string $campaign_medium A campaign medium.
+     *
      * @return self
      */
     public function setCampaignMedium($campaign_medium);
@@ -57,6 +66,7 @@ interface GAInterface
 
     /**
      * Get a random Id.
+     *
      * @return int
      */
     public function getRandomId();
@@ -64,7 +74,9 @@ interface GAInterface
 
     /**
      * Set a random Id.
+     *
      * @param int $random_id A random Id.
+     *
      * @return self
      */
     public function setRandomId($random_id);
@@ -72,6 +84,7 @@ interface GAInterface
 
     /**
      * Get a session Id.
+     *
      * @return int
      */
     public function getSessionId();
@@ -79,7 +92,9 @@ interface GAInterface
 
     /**
      * Set a session Id.
+     *
      * @param int $session_id A session Id.
+     *
      * @return self
      */
     public function setSessionId($session_id);
@@ -87,6 +102,7 @@ interface GAInterface
 
     /**
      * Get a campaign content.
+     *
      * @return string
      */
     public function getCampaignContent();
@@ -94,7 +110,9 @@ interface GAInterface
 
     /**
      * Set a campaign content.
+     *
      * @param string $campaign_content A campaign content.
+     *
      * @return self
      */
     public function setCampaignContent($campaign_content);
@@ -102,6 +120,7 @@ interface GAInterface
 
     /**
      * Get a campaign number.
+     *
      * @return int
      */
     public function getCampaignNumber();
@@ -109,7 +128,9 @@ interface GAInterface
 
     /**
      * Set a campaign number.
+     *
      * @param int $campaign_number A campaign number.
+     *
      * @return self
      */
     public function setCampaignNumber($campaign_number);
@@ -117,6 +138,7 @@ interface GAInterface
 
     /**
      * Get campaign terms.
+     *
      * @return string
      */
     public function getCampaignTerm();
@@ -124,7 +146,9 @@ interface GAInterface
 
     /**
      * Set campaign terms.
+     *
      * @param string $campaign_term A campaign terms.
+     *
      * @return self
      */
     public function setCampaignTerm($campaign_term);
@@ -132,6 +156,7 @@ interface GAInterface
 
     /**
      * Get first visit.
+     *
      * @return DateTimeInterface
      */
     public function getFirstVisit();
@@ -139,7 +164,9 @@ interface GAInterface
 
     /**
      * Set first visit.
+     *
      * @param DateTimeInterface $first_visit First visit.
+     *
      * @return self
      */
     public function setFirstVisit(DateTimeInterface $first_visit);
@@ -147,6 +174,7 @@ interface GAInterface
 
     /**
      * Get previous visit.
+     *
      * @return DateTimeInterface
      */
     public function getPreviousVisit();
@@ -154,7 +182,9 @@ interface GAInterface
 
     /**
      * Set previous visit.
+     *
      * @param DateTimeInterface $previous_visit Previous visit.
+     *
      * @return self
      */
     public function setPreviousVisit(DateTimeInterface $previous_visit);
@@ -162,6 +192,7 @@ interface GAInterface
 
     /**
      * Get current visit started.
+     *
      * @return DateTimeInterface
      */
     public function getCurrentVisitStarted();
@@ -169,7 +200,9 @@ interface GAInterface
 
     /**
      * Set current visit started.
+     *
      * @param DateTimeInterface $current_visit_started Current visit started.
+     *
      * @return self
      */
     public function setCurrentVisitStarted(DateTimeInterface $current_visit_started);
@@ -177,6 +210,7 @@ interface GAInterface
 
     /**
      * Get times visited.
+     *
      * @return string
      */
     public function getTimesVisited();
@@ -184,7 +218,9 @@ interface GAInterface
 
     /**
      * Set times visited.
+     *
      * @param string $times_visited Times visited.
+     *
      * @return self
      */
     public function setTimesVisited($times_visited);
@@ -192,6 +228,7 @@ interface GAInterface
 
     /**
      * Get pages viewed.
+     *
      * @return string
      */
     public function getPagesViewed();
@@ -199,7 +236,9 @@ interface GAInterface
 
     /**
      * Set pages viewed.
+     *
      * @param string $pages_viewed pages viewed.
+     * 
      * @return self
      */
     public function setPagesViewed($pages_viewed);

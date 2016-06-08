@@ -25,7 +25,9 @@ class GAParse implements GAParseInterface
 
     /**
      * GAParseInterface constructor.
-     * @param array $cookie A cookie array.
+     *
+     * @param mixed[] $cookie A cookie array.
+     *
      * @param GAInterface $ga A GA object.
      */
     public function __construct(

@@ -10,7 +10,9 @@ interface GAParseInterface
 {
   /**
    * GAParseInterface constructor.
-   * @param array $cookie A cookie array.
+   *
+   * @param mixed[] $cookie A cookie array.
+   * 
    * @param GAInterface $ga A GA object.
    */
   public function __construct(
@@ -20,8 +22,9 @@ interface GAParseInterface
 
 
   /**
-   * Parse cookies.
-   * @return void
+   * Parse cookies into GA object.
+   *
+   * @return GAInterface|false A GA object or false on failure.
    */
   public function parseCookies();
 }

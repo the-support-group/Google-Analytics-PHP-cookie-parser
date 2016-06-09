@@ -57,7 +57,7 @@ class GAParse implements GAParseInterface
         }
 
         // Split the utmz data into an array.
-        $utmzData =  preg_split('[\.]', $cookie["__utmz"], 5);
+        $utmzData =  preg_split('[\.]', urldecode($cookie["__utmz"]), 5);
 
         // If utmz data array contains incorrect number of keys return false.
         if (count($utmzData) !== 5) {
@@ -101,7 +101,7 @@ class GAParse implements GAParseInterface
         }
 
         // Split the utma data into an array.
-        $utmaData = preg_split('[\.]', $cookie["__utma"]);
+        $utmaData = preg_split('[\.]', urldecode($cookie["__utma"]));
 
         // Parse the __utma cookie.
         list(, $random_id, $time_initial_visit, $time_start_previous_visit, $time_start_current_visit, $session_counter) = $utmaData;
